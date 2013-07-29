@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Bernie Chiu"]
   spec.email         = ["bernie_chiu@hotmail.com"]
   spec.description   = %q{A gem that allows to generate random Chinese identities}
-  spec.summary       = %q{Call the gem module by each proper method to execute}
-  spec.homepage      = ""
+  spec.summary       = %q{Call the gem module by each proper method to generate}
+  spec.homepage      = "https://github.com/nerdExpo/chinese_faker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
