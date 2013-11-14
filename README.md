@@ -1,6 +1,6 @@
-# ChineseFaker
+# Chinese Faker
 
-TODO: Write a gem description
+It's a handy gem for generating Chineses fake identity.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+ChineseFaker::Name.name #=> "劉志偉"
+
+ChineseFaker::Job.title #=> "軟體工程師"
+```
 
 ## Contributing
 
