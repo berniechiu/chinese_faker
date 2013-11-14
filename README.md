@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+``` ruby
 ChineseFaker::Name.name #=> "劉志偉"
 
 ChineseFaker::Job.title #=> "軟體工程師"
