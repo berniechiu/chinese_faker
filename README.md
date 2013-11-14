@@ -1,6 +1,6 @@
 # Chinese Faker
 
-It's a handy gem for generating Chineses fake identity.
+It's a handy gem for generating Chinese fake identity.
 
 ## Installation
 
