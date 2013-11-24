@@ -18,7 +18,6 @@ module ChineseFaker
           parsed << name.map do |str|
             fetch("name.#{str[str.index('{') + 1, str.index('}') - 2]}")
           end.join
-
         end
 
         return with_title ? parsed[0] : parsed[1]
