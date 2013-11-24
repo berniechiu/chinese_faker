@@ -21,6 +21,8 @@ Or install it yourself as:
 ``` ruby
 ChineseFaker::Name.name #=> "劉志偉"
 
+ChineseFaker::Name.name(with_title: true) #=> "李敏醫師"
+
 ChineseFaker::Job.title #=> "軟體工程師"
 ```
 
