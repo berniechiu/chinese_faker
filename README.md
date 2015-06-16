@@ -1,3 +1,6 @@
+[![Gem Version](https://badge.fury.io/rb/chinese_faker.svg)](http://badge.fury.io/rb/chinese_faker)
+[![Code Climate](https://codeclimate.com/github/nerdExpo/chinese_faker/badges/gpa.svg)](https://codeclimate.com/github/nerdExpo/chinese_faker)
+
 # Chinese Faker
 
 It's a handy gem for generating Chinese fake identity.
