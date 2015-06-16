@@ -1,10 +1,9 @@
 # encoding: utf-8
 module ChineseFaker
-
   class Name < Base
-
     class << self
-      def name(opt = { with_title: false })
+      def name(opt = {})
+        opt[:with_title] ||= false
         parse('name.name', opt[:with_title])
       end
 

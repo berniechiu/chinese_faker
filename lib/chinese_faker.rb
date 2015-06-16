@@ -7,17 +7,15 @@ I18n.reload!
 I18n.default_locale = "zh-tw"
 
 module ChineseFaker
-
   class Base
     class << self
-      def parse(key, with_title=false)
+      def parse(key, with_title = false)
         parsed = []
 
         I18n.translate("chinese_faker.#{key}").each do |format|
           name = format.split
-          parsed << name.map do |str|
-            fetch("name.#{str[str.index('{') + 1, str.index('}') - 2]}")
-          end.join
+          parsed << name.map { |str| fetch("name.#{str[str.index('{') + 1, str.index('}') - 2]}") }
+                        .join
         end
 
         return with_title ? parsed[0] : parsed[1]
