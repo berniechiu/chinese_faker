@@ -1,6 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/chinese_faker.svg)](http://badge.fury.io/rb/chinese_faker)
 [![Code Climate](https://codeclimate.com/github/nerdExpo/chinese_faker/badges/gpa.svg)](https://codeclimate.com/github/nerdExpo/chinese_faker)
 [![Test Coverage](https://codeclimate.com/github/nerdExpo/chinese_faker/badges/coverage.svg)](https://codeclimate.com/github/nerdExpo/chinese_faker/coverage)
+[![Build Status](https://travis-ci.org/nerdExpo/chinese_faker.svg?branch=master)](https://travis-ci.org/nerdExpo/chinese_faker)
 
 # Chinese Faker
 
