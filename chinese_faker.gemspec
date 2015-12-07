@@ -1,3 +1,5 @@
+
+
 # ecoding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -10,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["bernie_chiu@hotmail.com"]
   spec.description   = %q{A gem that allows to generate random Chinese identities}
   spec.summary       = %q{Call the gem module by each proper method to generate}
-  spec.homepage      = "https://github.com/nerdExpo/chinese_faker"
+  spec.homepage      = "https://github.com/berniechiu/chinese_faker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
