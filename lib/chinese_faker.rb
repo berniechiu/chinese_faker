@@ -33,3 +33,4 @@ end
 
 require 'chinese_faker/name'
 require 'chinese_faker/job'
+require 'chinese_faker/address'
