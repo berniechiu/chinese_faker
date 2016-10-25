@@ -24,12 +24,14 @@ Or install it yourself as:
 ## Usage
 
 ``` ruby
-ChineseFaker::Name.name #=> "劉志偉"
+ChineseFaker::Name.name                   #=> "劉志偉"
 ChineseFaker::Name.name(with_title: true) #=> "李敏醫師"
-ChineseFaker::Job.title #=> "軟體工程師"
+
+ChineseFaker::Job.title        #=> "軟體工程師"
+
 ChineseFaker::Address.district #=> 桃園市
-ChineseFaker::Address.city #=> 新竹市
-ChineseFaker::Address.county #=> 苗栗縣
+ChineseFaker::Address.city     #=> 新竹市
+ChineseFaker::Address.county   #=> 苗栗縣
 ```
 
 ## Contributing
