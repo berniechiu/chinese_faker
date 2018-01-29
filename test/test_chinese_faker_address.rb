@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'test_helper'
 
-class TestChineseFakerAddress < Test::Unit::TestCase
+class TestChineseFakerAddress < Minitest::Test
   def setup
     @tester = ChineseFaker::Address
     @translations = YAML.load_file(File.expand_path('lib/locales/zh-tw.yml'))

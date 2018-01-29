@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'test_helper'
 
-class TestChineseFakerName < Test::Unit::TestCase
+class TestChineseFakerName < Minitest::Test
   def setup
     @tester = ChineseFaker::Name
     @characters = @tester.name.split('')
