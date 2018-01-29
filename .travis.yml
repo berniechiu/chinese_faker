@@ -1,12 +1,22 @@
+sudo: false
+env:
+  global:
+    - CC_TEST_REPORTER_ID=8308650d2c8d42be10deb3d3e243faac6b5452e40372efacffa2d794777e4d0f
 language: ruby
-
 rvm:
-  - 2.0.0
-  - 2.1.10
-  - 2.2.5
-  - 2.3.1
-
-addons:
-  code_climate:
-    repo_token:
-      secure: "JWW3SpzW2p1TIy7tjMNImQH8dSgBfbNBhBCTjTGo+rCNOffH5eb6iF+5kc7ggkKJs3E+Ud9ywuCZne0PI8BsvY+mebkh0S7z5ZRixZ7BNoawmr1y1m7Q2fWlsAI/bGdxj/a98t482Qk+dXHgQBa2NMUFXSb50zyGZwwp0fpjbPB8RuAQ/QR0QwrCcdU+DTpPx3oNhorn0pgDT3KhDVmE/voKREQH4qW/+cNnS61l4hvL6P4jZKN6T5hbqSWpKe/H+7VukHW+XVYlH16sXdVej83BSyWdjR10AgstTl8Ib9ExBAmzFpQVTxxI/laXAMyOERu4foUn1m1B4D5Nfz8JFGkP04eyRgVZG/YRXnTyGCnCJr7K9cGV21K5KbwtQtNs856vveXGG9INI3E/2d8Ay3z6jjPIwRzYMp0mtHtVbB5KH46MxKmgLUuBZHKx/oxyVYWN/x8mnl92WDqzfk8Wsid8PZDCQwMoPWTBvMY8TiftYzgCY5sCqOrUgzkkzaee97a/d0mOZrZ5Qyj3DZbXEbSAGDXP13umLhjPc/Crc7jsBQp7rHfNR56Kh3uUrxao/DEXIi7s/D++8bdvzEewduVgtzSqmrhi0NhC0TgjXD4960OmYUN17zPpbCzQM+tDmKgUtIt6wKqIUJODwBFxSLtBwFPtbwGHQHtuQhgS30U="
+  - 2.2
+  - 2.3
+  - 2.4
+  - 2.5
+cache: bundler
+before_install:
+  - gem install bundler
+  - gem update --system
+  - gem --version
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - bundle exec rake test
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
